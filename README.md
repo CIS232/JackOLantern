@@ -8,4 +8,4 @@ Here are some hints:
 2. The color of the shapes is controlled by `setFill`. Setting the value to `Paint.valueOf("#ffff00")` will make the shape yellow.
 3. Text visibility can be controlled with the `setVisibility` method.
 
-+6 Bonus
+**+6 Bonus**
