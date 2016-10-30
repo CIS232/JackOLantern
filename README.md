@@ -1,6 +1,6 @@
 # JackOLantern
 
-Recreate the jack-o-lantern gui found in the jar file.
+Recreate the jack-o-lantern gui found in the jar file. Make sure you click on the eyes/mouth!
 
 Here are some hints:
 
