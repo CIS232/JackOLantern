@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="edu.cis232.PumpkinController">
-	<!-- TODO Add Nodes -->
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.cis232.PumpkinController">
+   <children>
+      <ImageView fx:id="pumpkinBG" fitHeight="368.0" fitWidth="373.0" layoutX="16.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pumpkin.jpg" />
+         </image>
+      </ImageView>
+      <Circle fx:id="leftEye" layoutX="127.0" layoutY="184.0" onMouseClicked="#leftEyeClickedListener" radius="48.0" stroke="BLACK" strokeType="INSIDE" />
+      <Arc fx:id="mouth" layoutX="234.0" layoutY="270.0" length="200.0" onMouseClicked="#mouthClickedListener" radiusX="80.0" radiusY="80.0" rotate="-135.0" startAngle="38.7" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Circle fx:id="rightEye" layoutX="281.0" layoutY="159.0" onMouseClicked="#rightEyeClickedListener" radius="48.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="txtHappyHalloween" layoutX="68.0" layoutY="351.0" text="Happy Halloween!" textFill="#ffa218" visible="false">
+         <font>
+            <Font name="Snell Roundhand Bold" size="31.0" />
+         </font>
+         <effect>
+            <Glow level="0.64" />
+         </effect>
+      </Label>
+   </children>
 </AnchorPane>
